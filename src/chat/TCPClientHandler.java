@@ -1,4 +1,4 @@
-package bolinha3;
+package chat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,10 +9,10 @@ import java.util.StringTokenizer;
 public class TCPClientHandler extends Thread {
 
     private Socket socket;
-    private Bolinha3Client caller;
+    private ChatClient caller;
     private BufferedReader input;
 
-    public TCPClientHandler(Socket socket, Bolinha3Client caller) throws IOException {
+    public TCPClientHandler(Socket socket, ChatClient caller) throws IOException {
         this.socket = socket;
         this.caller = caller;
         this.input = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));

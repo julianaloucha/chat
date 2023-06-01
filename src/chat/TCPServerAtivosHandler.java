@@ -1,4 +1,4 @@
-package bolinha3;
+package chat;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;

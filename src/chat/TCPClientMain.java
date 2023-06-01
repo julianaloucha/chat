@@ -1,4 +1,4 @@
-package bolinha3;
+package chat;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,7 +8,7 @@ import java.net.UnknownHostException;
 
 public class TCPClientMain {
 
-    public TCPClientMain(String serverAddress, int serverPort, Bolinha3Client caller) throws UnknownHostException, IOException {
+    public TCPClientMain(String serverAddress, int serverPort, ChatClient caller) throws UnknownHostException, IOException {
         this.socket = new Socket(serverAddress, serverPort);
         //this.socket.setKeepAlive(true);
         handler = new TCPClientHandler(socket, caller);

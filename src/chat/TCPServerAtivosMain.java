@@ -1,4 +1,4 @@
-package bolinha3;
+package chat;
 
 import java.io.IOException;
 import java.net.ServerSocket;
